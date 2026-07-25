@@ -46,12 +46,15 @@ export default function App() {
         <ITHLogo className="h-8 sm:h-10 w-auto transition-transform duration-300 group-hover:scale-105" />
       </div>
 
-      {/* Background Image: full image, no cropping */}
-      <img
-        src="/character_coding_minecraft_v5_hd.png"
-        alt=""
-        className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0"
-        style={{ objectPosition: 'center center' }}
+      {/* Background Image: full landscape width, no side crop */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          backgroundImage: `url('/character_coding_minecraft_v5_hd.png')`,
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+        }}
       />
 
       {/* Ambient Vignette Overlay */}
