@@ -46,15 +46,14 @@ export default function App() {
         <ITHLogo className="h-8 sm:h-10 w-auto transition-transform duration-300 group-hover:scale-105" />
       </div>
 
-      {/* Background Image: full landscape width, no side crop */}
-      <div
-        className="absolute inset-0 pointer-events-none z-0"
-        style={{
-          backgroundImage: `url('/character_coding_minecraft_v5_hd.png')`,
-          backgroundSize: '100% auto',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat',
-        }}
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+        src="/watermark-removed-creatae_a_video_using_this.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
 
       {/* Ambient Vignette Overlay */}
